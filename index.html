@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Patients</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Business Partnership</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <p>BLOGS | FAQS</p>
+            <div class="user-section">
+                <a href="#">
+                    <i class="fas fa-user"></i> Welcome Guest User
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <header class="header1">
+        <div class="logo">
+            <img src="./src/logo-header-2.webp" alt="Dr Lal PathLabs Logo">
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Book a Test</a>
+            <a href="#">Nearest Center</a>
+            <a href="#">Download Report</a>
+            <a href="#">Special Programs</a>
+            <a href="#">Promotions & Discounts</a>
+        </nav>
+
+        <div class="search-section">
+            
+            <div class="l1"><p>delhi</p></div>
+            <div class="hu">
+            <div class="search-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Search Location">
+            </div>
+            <input type="text" class="search-bar" placeholder="Search Test & Packages">
+           </div>
+        </div>
+
+        <div class="header-actions">
+            
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+
+            <button class="abha-button">
+                <i class="fas fa-user"></i> Create/Link Your ABHA
+            </button>
+        </div>
+    </header>
+
+    <div class="banner"></div>
+        <script>
+            const images = [
+                'url("./src/2.jpeg")',
+                'url("./src/1.jpeg")',
+                'url("./src/3.jpeg")',
+                'url("./src/4.jpeg")'
+            ];
+
+            let currentIndex = 0;
+
+            function changeBackgroundImage() {
+                document.querySelector('.banner').style.backgroundImage = images[currentIndex];
+                currentIndex = (currentIndex + 1) % images.length;
+            }
+
+            setInterval(changeBackgroundImage, 4000);
+            function resizeBackgroundImage(size) {
+                document.querySelector('.banner').style.backgroundSize = size;
+            }
+            resizeBackgroundImage('100% 100%');
+            changeBackgroundImage();
+        </script>
+
+
+
+        <!-- Top Navigation Section -->
+        <div class="top-nav">
+            <hr><div class="nav-item">
+                <img src="./src/near.png" alt="Nearest Centre">
+                <p>Nearest Centre</p>
+            </div>
+            <hr><div class="nav-item">
+                <img src="./src/book.png" alt="Book a Test">
+                <p>Book a Test</p>
+            </div>
+            <hr><div class="nav-item">
+                <img src="./src/test.png" alt="Test Menu">
+                <p>Test Menu</p>
+            </div>
+            <hr><div class="nav-item">
+                <img src="./src/download.png" alt="Download Report">
+                <p>Download Report</p>
+            </div>
+            <hr>
+            <div class="nav-item">
+                <img src="./src/upload.png" alt="Upload Prescription">
+                <p>Upload Prescription</p>
+            </div><hr>
+        </div>
+
+<section class="main">
+        <!-- Special Programs Section -->
+        <div class="special-programs">
+            <h2>Special Programs</h2>
+            <div class="slider">
+                <button class="subtn"><img src="./src/left-arrow.png" alt="" srcset=""></button>
+                <div class="slider-content">
+                    <div class="program-item">
+                        <img src="./src/oncopro-1_0.png" alt="Oncopro">
+                        <p>Oncopro</p>
+                    </div>
+                    <div class="program-item">
+                        <img src="./src/diabetic.png" alt="Diabetic Care">
+                        <br>
+                        <p>Diabetic Care Program</p>
+                    </div>
+                    <div class="program-item">
+                        <img src="./src/swact.png" alt="SwashFit">
+                        <p>SwashFit</p>
+                    </div>
+                    <div class="program-item">
+                        <img src="./src/pregncy.png" alt="Pregnancy Packages">
+                        <p>Pregnancy Packages</p>
+                    </div>
+                </div>
+                <button class="subtn"><img src="./src/right-arrow.png" alt=""></button>
+            </div>
+        </div>
+
+
+            <!-- Popular Tests Section -->
+            <div class="popular-tests">
+                <h2>Popular Tests / Packages</h2>
+                <div class="test-cards">
+                    <div class="card">
+                        <h3>GLUCOSE, FASTING (F)</h3>
+                        <hr>
+                        <p><img src="./src/info-icon.png"> No special preparation required.</p>
+                        <p><img src="./src/report-icon.png">Sample Daily by 11 am; Report Same day</p>
+                        <p><img src="./src/report-icon.png"> 2 parameter(s) covered</p>
+                        <div class="card-footer">
+                            <span>₹80</span>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>GLYCOSYLATED</h3><hr>
+                        <p><img src="./src/info-icon.png"> No special preparation required.</p>
+                        <p><img src="./src/report-icon.png">Sample Daily by 11 am; Report Same day</p>
+                        <p><img src="./src/report-icon.png"> 2 parameter(s) covered</p>
+                        <div class="card-footer">
+                            <span>₹440</span>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>ALLERGY SCREEN</h3><hr>
+                        <p><img src="./src/info-icon.png"> No special preparation required.</p>
+                        <p><img src="./src/report-icon.png">Sample Daily by 11 am; Report Same day</p>
+                        <p><img src="./src/report-icon.png"> 2 parameter(s) covered</p>
+                        <div class="card-footer">
+                            <span>₹1,800</span>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            
+            <!-- Search Test Section -->
+            <div class="search-tests">
+                <h2>Search Test and Packages</h2>
+                <br>
+                <div class="filters">
+                    <button class="active">Lifestyle Disorder</button>
+                    <button>Condition</button>
+                    <button>Alphabet</button>
+                </div>
+                <div class="slider">
+                <button class="subtn"><img src="./src/left-arrow.png" alt="" srcset=""></button>
+                    <div class="test-items">
+                        <div class="test-item">
+                            <img src="./src/lungs.png" alt="Lungs">
+                            <p>Lungs</p>
+                        </div>
+                        <div class="test-item">
+                            <img src="./src/kidney.png" alt="Kidney">
+                            <p>Kidney</p>
+                        </div>
+                        <div class="test-item">
+                            <img src="./src/cbc.png" alt="CBC">
+                            <p>CBC</p>
+                        </div>
+                        <div class="test-item">
+                            <img src="./src/thyriod.png" alt="Thyroid">
+                            <p>Thyroid</p>
+                        </div>
+                        <div class="test-item">
+                            <img src="./src/vitamin d.png" alt="Vitamin D">
+                            <p>Vitamin D</p>
+                        </div>
+                        <div class="test-item">
+                            <img src="./src/High_fever.png" alt="Fever">
+                            <p>Fever</p>
+                        </div>
+                    </div>
+                <button class="subtn"><img src="./src/right-arrow.png" alt=""></button>
+                </div>
+                <a href="#" class="view-all">View All</a>
+            </div>
+
+
+                <!-- Promotions & Discounts -->
+                <section class="promotions">
+                    <h2>Promotions & Discounts</h2>
+                    <div class="promotion-cards">
+                        <div class="promo-card">
+                            <img src="./src/download-image.png" alt="Home Collection Offer">
+                            <p>Home Collection Exclusive Offer</p>
+                        </div>
+                        <div class="promo-card">
+                            <img src="./src/download-image3.png" alt="Family Healthcare Offer">
+                            <p>Family Offer on Swasthfit Healthcare Packages</p>
+                        </div>
+                        <div class="promo-card">
+                            <img src="./src/download-image2.png" alt="Senior Citizen Offer">
+                            <p>Swasth Points for Senior Citizens</p>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">View All</a>
+                </section>
+                
+                <!-- Explore More Section -->
+                <section class="explore-more">
+                    <h2>Explore More</h2>
+                    <br>
+                    <div class="explore-banner">
+                        <img src="./src/Swasthfit.png" alt="Explore SwasthFit Packages">
+                            
+                    </div>
+                </section>
+
+                <section class="explore-more">
+                    <div class="lion" style="display:flex;gap: 28%;"><h2>Corporate Covid Package</h2> <h2>Corporate Tie-Ups
+</h2></div>
+                    <br>
+                    <div class="explore-banner-two">
+                        <img src="./src/Screenshot 2024-12-18 180318.png" alt="Explore SwasthFit Packages">
+                        <img src="./src/Screenshot 2024-12-18 180343.png" alt="Explore SwasthFit Packages">
+                    </div>
+                </section>
+
+                <section class="explore-more">
+                    <h2>Quality</h2>
+                    <br>
+                    <div class="explore-banner" style="background: #fff;">
+                        <img src="./src/Screenshot 2024-12-18 181538.png" alt="Explore SwasthFit Packages">
+                    </div>
+                    <a href="#" class="view-all">View All</a>
+
+                </section>
+
+                <section class="explore-more">
+                    <div class="explore-banner-two">
+                        <img src="./src/Screenshot 2024-12-18 175404.png" alt="Explore SwasthFit Packages">
+                        <img src="./src/Screenshot 2024-12-18 175415.png" alt="Explore SwasthFit Packages">
+                    </div>
+                </section>
+
+                <section class="explore-more">        
+                <div class="explore-banner">
+                        <img src="./src/Screenshot 2024-12-18 173744.png" alt="Explore SwasthFit Packages">    
+                    </div>
+                </section>
+
+
+                    <section class="promotions">
+                        <h2>Featured Blog and Articles</h2>
+                     
+                        <div class="promotion-cards">
+                                        <button class="subtn"><img src="./src/left-arrow.png" alt="" srcset=""></button>
+                            <div class="promo-card">
+                                <img src="./src/A1.png" alt="Home Collection Offer">
+                                <p>Staying active after 60 is essenti...</p>
+                            </div>
+                            <div class="promo-card">
+                                <img src="./src/a2.jpg" alt="Home Collection Offer">
+                                <p> Swasthfit Healthcare Packages....</p>
+                            </div>
+                            <div class="promo-card">
+                                <img src="./src/a3.png" alt="Home Collection Offer">
+                                <p>Swasth Points for Senior Citizens</p>
+                            </div>
+                                    <button class="subtn"><img src="./src/right-arrow.png" alt=""></button>
+
+                        </div>
+                        <a href="#" class="view-all">View All</a>
+                    </section>
+
+
+                     <section class="promotions">
+                        <h2>Dr Lal PathLabs Videos</h2>
+                        <div class="promotion-cards">
+                            <div class="promo-card" style="height: 400px;">
+                              <img src="./src/centre-near-you.png" alt="Centre Near You" style="border-radius: 10px;">
+                                <p style="height: 25%;;">Bharat Ka Vishwas – Centre Near You</p>
+                            </div>
+                            <div class="promo-card" style="height: 400px;">
+                                <img src="./src/timely-report.png" alt="Centre Near You" style="border-radius: 10px;">
+                                <p>Bharat Ka Vishwas – Timely Report</p>
+                            </div>
+                            <div class="promo-card" style="height: 400px;">
+                                <img src="./src/centre-near-you-1.png" alt="Centre Near You" style="border-radius: 10px;">
+                                <p>Bharat Ka Vishwas – Home Collection</p>
+                            </div>
+                        </div>
+                        <a href="#" class="view-all">View All</a>
+                    </section>
+
+
+                    <section class="promotions">
+                        <h2>Dr Lal PathLabs – Your Most Trusted Healthcare Partner!</h2>
+                        <P>We are one of the oldest players who focused on bringing quality diagnosis services by providing accurate and timely
+                        test results to our valued customers. With a commitment to excellence and a wide range of comprehensive test panels, Dr
+                        Lal PathLabs is your trusted partner in promoting good health and overall well-being.</P>
+                        <H3>Our Expertise</H3>
+                        <P>With 70+ years of experience, we bring medical expertise and proficiency in the field of diagnostics. Our team of highly
+                        skilled professionals, including experienced <span style="color: blue;">doctor</span> and technicians, ensures the highest standard of quality and
+                        precision in every test we conduct.</P>
+                        <H3>Comprehensive Test Menu</H3>
+                        <P>At Dr Lal PathLabs, we offer an extensive range of diagnostic tests covering various medical specialties. From <b> routine
+                        blood tests </b>to advanced molecular diagnostics, we have the capabilities to cater to all your diagnostic needs. Our
+                        state-of-the-art laboratories are equipped with cutting-edge technology, allowing us to deliver accurate results on
+                        time.</P>
+                        <a href="#" class="view-all">View All</a>
+                    </section>
+
+            <div class="search-tests">
+                <h2>Search Test and Packages</h2>
+                <div class="filters">
+                    <button class="active">Lifestyle Disorder</button>
+                    <button>Condition</button>
+                    <button>Alphabet</button>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="arrow">▼</span>
+                            <a href="#">Q. How many labs and centres does LPL have at present?</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="arrow">▼</span>
+                            <a href="#">Q. How can I find out information regarding a particular lab/center?</a>
+                        </div>
+                    </div>
+                </div>
+               <a href="#" class="view-all">View All</a>
+                </div>
+                  
+                <section class="promotions" >
+                    <h2>Lab Test At Home</h2>
+                    <p style="line-height: 1.6;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                        max-height: 300px;
+                        text-align: justify;">
+                        Agartala | Agra | Ahmedabad | Aligarh | Allahabad | Alwar | Ambala | Amravati | Amritsar | Aurangabad | Azamgarh |
+                        Bahadurgarh | Bareilly | Begusarai | Bengaluru | Bhatinda | Bhilai | Bhopal | Bhubaneshwar | Bijnor | Bilaspur |
+                        Chandigarh | Chennai | Coimbatore | Daltonganj | Darbhanga | Dehradun | Delhi | Deoria | Dhanbad | Durgapur |
+                        Faridabad | Faizabad | Gaya | Ghaziabad | Goa Velha | Gorakhpur | Greater Noida | Gurgaon | Guwahati | Gwalior |
+                        Haldwani | Haridwar | Hisar | Hoshiarpur | Howrah | Hyderabad | Indore | Jabalpur | Jaipur | Jalandhar | Jammu |
+                        Jamshedpur | Jodhpur | Kangra | Kanpur | Karnal | Khanna | Kochi | Kolkata | Kota | Kurukshetra | Lucknow | Ludhiana
+                        | Mangalore | Mathura | Meerut | Modinagar | Moga | Mohali | Moradabad | Mumbai | Muzaffarpur | Mysore | Nagpur |
+                        Nashik | Noida | Panchkula | Panipat | Pathankot | Patiala | Patna | Pune | Purnia | Raipur | Ranchi | Rewari |
+                        Rohtak | Sagar | Saharanpur | Shillong | Shimla | Silchar | Siliguri | Sirsa | Sonipat | Srinagar | Udaipur |
+                        Vadodara | Varanasi | Yamuna Nagar
+                    </p>
+                    <a href="#" class="view-all">View All</a>
+                </section>
+
+
+                <section class="promotions">
+                    <h2>Popular Tests</h2>
+                    <p style="line-height: 1.6;
+                                        word-wrap: break-word;
+                                        overflow: hidden;
+                                        max-height: 300px;
+                                        text-align: justify;">
+                            Pregnancy Test | Full Body Checkups | Covid 19 Test | Heart Test | Kidney Test | Liver Test | CBC Test | Cholesterol
+                            Test | HbA1c Test | Hepatitis B Test | Kidney Function Test | Liver Function Test | Sugar Test | Thyroid Test | Typhoid
+                            Test | Uric Acid Test | Vitamin B12 Test | Vitamin D Test | Allergy Test | Arthritis Test | Cancer Test | Bone And Joint
+                            | Dengue Test | Diabetes Test | Rheumatoid Test | Tuberculosis Test | Infertility Test | Diabetes Care | Anemia Test |
+                            GastroIntestinal | Autoimmune Disorders | Fever Test
+                    </p>
+                    <a href="#" class="view-all">View All</a>
+                </section>
+                
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- PATIENTS -->
+            <div class="footer-column">
+                <h3>PATIENTS</h3>
+                <ul>
+                    <li><a href="#">Book a Test</a></li>
+                    <li><a href="#">Nearest Centre</a></li>
+                    <li><a href="#">Download Report</a></li>
+                    <li><a href="#">Download App</a></li>
+                    <li><a href="#">Promotions & Discounts</a></li>
+                    <li><a href="#">Special Programs</a></li>
+                </ul>
+            </div>
+
+            <!-- DOCTORS -->
+            <div class="footer-column">
+                <h3>DOCTORS</h3>
+                <ul>
+                    <li><a href="#">Test Menu</a></li>
+                    <li><a href="#">Our Labs</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Quality</a></li>
+                    <li><a href="#">Resource Center</a></li>
+                    <li><a href="#">Our Departments</a></li>
+                </ul>
+            </div>
+
+            <!-- BUSINESS PARTNERSHIP -->
+            <div class="footer-column">
+                <h3>BUSINESS PARTNERSHIP</h3>
+                <ul>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">Become a Vendor</a></li>
+                    <li><a href="#">Corporate Tie-up</a></li>
+                    <li><a href="#">International Partnership</a></li>
+                    <li><a href="#">Corporate Covid Testing</a></li>
+                </ul>
+            </div>
+
+            <!-- ABOUT US -->
+            <div class="footer-column">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="#">Our Journey</a></li>
+                    <li><a href="#">Vision, Mission & Values</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our Network</a></li>
+                    <li><a href="#">Logistics Strength</a></li>
+                    <li><a href="#">CSR</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <!-- INVESTORS -->
+            <div class="footer-column">
+                <h3>INVESTORS</h3>
+                <ul>
+                    <li><a href="#">Financials</a></li>
+                    <li><a href="#">Investors Information</a></li>
+                    <li><a href="#">Corporate Governance</a></li>
+                    <li><a href="#">Smart ODR</a></li>
+                    <li><a href="#">SEBI Scores</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>2024© LalPathLabs.com. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">CSR</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Online Cancellation Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+            <p>Only Pathology reports available online. For X-Ray, Ultrasound, ECG, TMT, Echo, PFT, Uroflowmetry
+                reports, please visit the concerned center where the test has been conducted.</p>
+        </div>
+    </footer>
+</body>
+</html>
