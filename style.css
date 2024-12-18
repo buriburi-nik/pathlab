@@ -18,6 +18,7 @@
     align-items: center;
     padding: 15px 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .nav{
@@ -198,9 +199,10 @@
     background-color: #004a99;
     color: #fff;
     border: none;
-    padding: 5px 15px;
+    padding: 10px 5px;
     border-radius: 5px;
     width: 120px;
+    height: auto;
     font-size: 0.9rem;
     cursor: pointer;
     display: flex;
@@ -210,6 +212,7 @@
 
 .abha-button i {
     font-size: 1rem;
+    padding: 0.5rem;
 }
 
 .abha-button:hover {
@@ -217,12 +220,14 @@
 }
 
 .banner {
+    position: relative;
     width: 100vw;
     height: 300px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: background-image 1s ease-in-out;
+    z-index: 10;
 }
 
 /* Top Navigation Section */
@@ -267,7 +272,7 @@
     padding: 20px;
     text-align: justify;
     border-radius: 8px;
-    width: 90%;
+    width: 88%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     text-align: justify;
@@ -523,11 +528,11 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 20px 2rem;
+    font-size: 0.95rem;
 }
 
 .footer-column h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+font-size: 0.9rem;    margin-bottom: 10px;
 }
 
 .footer-column ul li {
@@ -547,13 +552,30 @@ footer {
 .footer-bottom {
     background-color: #0045a5;
     /* Blue Background */
+    display: flex;
     color: white;
     text-align: justify;
     padding: 15px 5rem;
+    gap: 2rem;
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.icon {
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 24px;
+text-decoration: none;
+ }
 
 .footer-bottom p {
     margin-bottom: 8px;
+    font-weight: 500;
     padding-left: 0.5rem;
 }
 
@@ -621,3 +643,45 @@ footer {
     color: #0066cc;
     font-weight: bold;
 }
+
+                .floating-menu {
+                    position: fixed;
+                    top: 25%;
+                    right: 0;
+                    background-color: white;
+                    border: 1px solid #ddd;
+                    border-radius: 8px 0 0 8px;
+                    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+                }
+        
+                .menu-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 3px;
+                    border-bottom: 2px solid #ddd;
+                    color: #0052A2;
+                    text-decoration: none;
+                    transition: background-color 0.3s ease;
+                }
+
+                .menu-item span{
+                    font-size: 0.7rem;
+                    word-wrap:break-word;
+                    font-weight: 600;
+                }
+        
+                .menu-item:last-child {
+                    border-bottom: none;
+                }
+        
+                .menu-item:hover {
+                    background-color: #FFCC33;
+                    color: #000;
+                }
+        
+                .menu-icon {
+                    width: 25px;
+                    height: 25px;
+                }
